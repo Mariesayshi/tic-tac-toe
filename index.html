@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/tic-tac-toe.png"
+  />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <section class="appCont">
+      <div class="controls">
+        <div class="logo">
+          <div class="xLogo">
+            <img src="./images/icons8-close.svg" />
+          </div>
+
+          <div class="oLogo">
+            <div class="color"></div>
+            <img src="./images/8530638_circle_icon.svg" />
+          </div>
+        </div>
+        <div class="turnIndicator">
+          <img class="xTurn" src="./images/icons8-close.svg" />
+          <div class="oTurn">
+            <img src="./images/8530638_circle_icon.svg" />
+          </div>
+          <span>Turn</span>
+        </div>
+        <div class="refreshBtn">
+          <img src="./images/icons8-refresh.svg" />
+        </div>
+      </div>
+      <div class="gameGrid">
+        <div class="row row1">
+          <div class="square" id="r1-c1">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r1-c2">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r1-c3">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="square" id="r2-c1">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r2-c2">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r2-c3">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+        </div>
+        <div class="row row3">
+          <div class="square" id="r3-c1">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r3-c2">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+          <div class="square" id="r3-c3">
+            <div class="oBtn">
+              <div class="color"></div>
+              <img src="./images/8530638_circle_icon.svg" />
+            </div>
+            <img class="xBtn" src="./images/icons8-close.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="scores">
+        <div class="xScore">
+          <img src="./images/icons8-close.svg" class="xScoreHeading" />
+          <div class="xScoreNum">0</div>
+        </div>
+        <div class="ties">
+          <div class="tiesHeading">ties</div>
+          <div class="tieScoreNum">0</div>
+        </div>
+        <div class="oScore">
+          <div class="oScoreHeading">
+            <div class="color"></div>
+            <img src="./images/8530638_circle_icon.svg" />
+          </div>
+          <div class="oScoreNum">0</div>
+        </div>
+      </div>
+    </section>
+    <div class="backdrop">
+      <div class="refreshModal">
+        <h3 class="refreshHeading">restart the game?</h3>
+        <div class="refreshBtns">
+          <div class="cancelBtn">no, cancel</div>
+          <div class="confirmBtn">yes, restart</div>
+        </div>
+      </div>
+      <div class="outcomeModal">
+        <div class="outcomeHeading">
+          <div class="winnerLogo">
+            <img class="xWinIcon" src="./images/icons8-close.svg" />
+            <div class="oWinIcon">
+              <img class="oCircle" src="./images/8530638_circle_icon.svg" />
+              <div class="color"></div>
+            </div>
+          </div>
+          <h3 class="winHeading">takes the round</h3>
+          <h3 class="tieHeading">It's a Draw!</h3>
+        </div>
+        <div class="outcomeBtns">
+          <div class="quitBtn">quit</div>
+          <div class="nextRoundBtn">next round</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
